@@ -1,0 +1,21 @@
+{
+  "name": "reddit-root-comment-highlighter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/script.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc && esbuild src/script.js --minify --outfile=dist/script.min.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.251",
+    "esbuild": "^0.19.5",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@types/node": "^20.9.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit root comment highlighter",
+  "description": "To make it visually easier to find root comments in Reddit threads",
+  "version": "1.1",
+  "action": {
+    "default_popup": "src/index.html",
+    "default_icon": "public/highlight.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["dist/script.min.js"],
+      "matches": [
+        "https://www.reddit.com/*"
+      ]
+    }
+  ]
+}
